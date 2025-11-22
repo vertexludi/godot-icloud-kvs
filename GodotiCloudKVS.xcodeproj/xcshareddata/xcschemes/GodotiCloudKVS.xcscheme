@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5EF48ABB2E71AEE3007295F0"
-               BuildableName = "libiOSPluginTemplate.a"
-               BlueprintName = "iOSPluginTemplate"
-               ReferencedContainer = "container:iOSPluginTemplate.xcodeproj">
+               BuildableName = "libGodotiCloudKVS.a"
+               BlueprintName = "GodotiCloudKVS"
+               ReferencedContainer = "container:GodotiCloudKVS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -51,9 +51,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5EF48ABB2E71AEE3007295F0"
-            BuildableName = "libiOSPluginTemplate.a"
-            BlueprintName = "iOSPluginTemplate"
-            ReferencedContainer = "container:iOSPluginTemplate.xcodeproj">
+            BuildableName = "libGodotiCloudKVS.a"
+            BlueprintName = "GodotiCloudKVS"
+            ReferencedContainer = "container:GodotiCloudKVS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
