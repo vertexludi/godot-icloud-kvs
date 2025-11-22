@@ -3,3 +3,10 @@ Pods/
 
 # Build artifacts
 /bin/
+
+# IDE files
+*.xcodeproj/project.xcworkspace/xcuserdata
+
+# OS file
+.DS_Store
+
