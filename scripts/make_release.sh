@@ -22,18 +22,23 @@ xcrun xcodebuild -create-xcframework \
 		-output bin/xcframeworks/${PLUGIN_NAME}.release.xcframework
 
 # Move all to release folder
-rm -rf bin/${PLUGIN_NAME}
-mkdir -p bin/${PLUGIN_NAME}
+PLUGIN_PATH=bin/ios/plugins/${PLUGIN_NAME}
+ADDON_PATH=bin/addons/${PLUGIN_NAME}
+rm -rf bin/ios
+rm -rf bin/addons
+mkdir -p ${PLUGIN_PATH}
+mkdir -p bin/addons
 
-touch bin/${PLUGIN_NAME}/.gdignore
-cp ${PLUGIN_NAME}/${PLUGIN_NAME}.gdip bin/${PLUGIN_NAME}/
-mv bin/xcframeworks/${PLUGIN_NAME}.debug.xcframework bin/${PLUGIN_NAME}/
-mv bin/xcframeworks/${PLUGIN_NAME}.release.xcframework bin/${PLUGIN_NAME}/
+cp ${PLUGIN_NAME}/${PLUGIN_NAME}.gdip ${PLUGIN_PATH}
+mv bin/xcframeworks/${PLUGIN_NAME}.debug.xcframework ${PLUGIN_PATH}
+mv bin/xcframeworks/${PLUGIN_NAME}.release.xcframework ${PLUGIN_PATH}/
 
 rm -rf bin/xcframeworks
 rm -rf bin/archives
 
+cp -r wrapper ${ADDON_PATH}
+
 cd bin
 rm -rf ${PLUGIN_NAME}.zip
-zip -r ${PLUGIN_NAME} ${PLUGIN_NAME}
+zip -r ${PLUGIN_NAME} ios addons
 cd ..
