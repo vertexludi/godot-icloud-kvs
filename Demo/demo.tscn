@@ -1,0 +1,210 @@
+[gd_scene load_steps=3 format=3 uid="uid://bp17w1bxyipxs"]
+
+[ext_resource type="Script" uid="uid://bdi08hivups71" path="res://demo.gd" id="1_5hfv0"]
+
+[sub_resource type="Theme" id="Theme_fr1sm"]
+Button/font_sizes/font_size = 60
+Label/font_sizes/font_size = 60
+LineEdit/font_sizes/font_size = 60
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_fr1sm")
+script = ExtResource("1_5hfv0")
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="List" type="VBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Title" type="Label" parent="Margin/List"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "iCloud Key-Value store demo"
+horizontal_alignment = 1
+
+[node name="String" type="HBoxContainer" parent="Margin/List"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="Margin/List/String"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+text = "String"
+
+[node name="Set" type="Button" parent="Margin/List/String"]
+layout_mode = 2
+text = "Set"
+
+[node name="Get" type="Button" parent="Margin/List/String"]
+layout_mode = 2
+text = "Get"
+
+[node name="Key" type="LineEdit" parent="Margin/List/String"]
+layout_mode = 2
+text = "string"
+placeholder_text = "Key"
+
+[node name="Value" type="LineEdit" parent="Margin/List/String"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Value"
+
+[node name="Clear" type="Button" parent="Margin/List/String"]
+layout_mode = 2
+text = "Clear"
+
+[node name="Int" type="HBoxContainer" parent="Margin/List"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="Margin/List/Int"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+text = "Int"
+
+[node name="Set" type="Button" parent="Margin/List/Int"]
+layout_mode = 2
+text = "Set"
+
+[node name="Get" type="Button" parent="Margin/List/Int"]
+layout_mode = 2
+text = "Get"
+
+[node name="Key" type="LineEdit" parent="Margin/List/Int"]
+layout_mode = 2
+text = "int"
+placeholder_text = "Key"
+
+[node name="Value" type="LineEdit" parent="Margin/List/Int"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Value"
+
+[node name="Clear" type="Button" parent="Margin/List/Int"]
+layout_mode = 2
+text = "Clear"
+
+[node name="Float" type="HBoxContainer" parent="Margin/List"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="Margin/List/Float"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+text = "Float"
+
+[node name="Set" type="Button" parent="Margin/List/Float"]
+layout_mode = 2
+text = "Set"
+
+[node name="Get" type="Button" parent="Margin/List/Float"]
+layout_mode = 2
+text = "Get"
+
+[node name="Key" type="LineEdit" parent="Margin/List/Float"]
+layout_mode = 2
+text = "float"
+placeholder_text = "Key"
+
+[node name="Value" type="LineEdit" parent="Margin/List/Float"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Value"
+
+[node name="Clear" type="Button" parent="Margin/List/Float"]
+layout_mode = 2
+text = "Clear"
+
+[node name="Bool" type="HBoxContainer" parent="Margin/List"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="Margin/List/Bool"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+text = "Bool"
+
+[node name="Set" type="Button" parent="Margin/List/Bool"]
+layout_mode = 2
+text = "Set"
+
+[node name="Get" type="Button" parent="Margin/List/Bool"]
+layout_mode = 2
+text = "Get"
+
+[node name="Key" type="LineEdit" parent="Margin/List/Bool"]
+layout_mode = 2
+text = "bool"
+placeholder_text = "Key"
+
+[node name="Value" type="LineEdit" parent="Margin/List/Bool"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Value"
+
+[node name="Clear" type="Button" parent="Margin/List/Bool"]
+layout_mode = 2
+text = "Clear"
+
+[node name="Data" type="HBoxContainer" parent="Margin/List"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="Margin/List/Data"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+text = "Data"
+
+[node name="Set" type="Button" parent="Margin/List/Data"]
+layout_mode = 2
+text = "Set"
+
+[node name="Get" type="Button" parent="Margin/List/Data"]
+layout_mode = 2
+text = "Get"
+
+[node name="Key" type="LineEdit" parent="Margin/List/Data"]
+layout_mode = 2
+text = "data"
+placeholder_text = "Key"
+
+[node name="Value" type="LineEdit" parent="Margin/List/Data"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Value"
+
+[node name="Clear" type="Button" parent="Margin/List/Data"]
+layout_mode = 2
+text = "Clear"
+
+[node name="Synchronize" type="Button" parent="Margin/List"]
+layout_mode = 2
+text = "Synchronize"
+
+[node name="GetAll" type="Button" parent="Margin/List"]
+layout_mode = 2
+text = "Get all values (print)"
+
+[node name="DataChanged" type="AcceptDialog" parent="."]
+oversampling_override = 1.0
+title = "Data changed"
+initial_position = 1
+size = Vector2i(667, 286)
+dialog_text = "Data changed"

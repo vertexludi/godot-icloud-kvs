@@ -6,7 +6,6 @@
 
 void register_godot_icloud_kvs_types() {
 	GDREGISTER_CLASS(GodotiCloudKVS);
-
 }
 
 void unregister_godot_icloud_kvs_types() {
