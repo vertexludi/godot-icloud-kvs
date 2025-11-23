@@ -6,8 +6,8 @@
 
 @class KVSObserver;
 
-class GodotiCloudKVSListener final : public RefCounted  {
-	GDCLASS(GodotiCloudKVSListener, RefCounted)
+class GodotICloudKVSListener final : public RefCounted  {
+	GDCLASS(GodotICloudKVSListener, RefCounted)
 
 	KVSObserver *observer;
 
@@ -15,14 +15,14 @@ protected:
 	static void _bind_methods();
 
 public:
-	GodotiCloudKVSListener();
-	~GodotiCloudKVSListener();
+	GodotICloudKVSListener();
+	~GodotICloudKVSListener();
 
 	void post_change(int reason, const TypedArray<String> &keys);
 };
 
-class GodotiCloudKVS final : public RefCounted {
-	GDCLASS(GodotiCloudKVS, RefCounted)
+class GodotICloudKVS final : public RefCounted {
+	GDCLASS(GodotICloudKVS, RefCounted)
 
 protected:
 	static void _bind_methods();
@@ -43,5 +43,5 @@ public:
 	static Dictionary dictionary_representation();
 
 	static bool synchronize();
-	static Ref<GodotiCloudKVSListener> make_listener();
+	static Ref<GodotICloudKVSListener> make_listener();
 };

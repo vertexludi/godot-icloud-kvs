@@ -19,26 +19,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5EF48ABC2E71AEE3007295F0 /* libGodotiCloudKVS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSPluginTemplate.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EF48ABC2E71AEE3007295F0 /* libGodotICloudKVS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSPluginTemplate.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		5EF48AC32E71AEE3007295F0 /* Exceptions for "GodotiCloudKVS" folder in "Copy Files" phase from "iOSPluginTemplate" target */ = {
+		5EF48AC32E71AEE3007295F0 /* Exceptions for "GodotICloudKVS" folder in "Copy Files" phase from "iOSPluginTemplate" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			buildPhase = 5EF48ABA2E71AEE3007295F0 /* CopyFiles */;
 			membershipExceptions = (
-				GodotiCloudKVS.h,
+				GodotICloudKVS.h,
 			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5EF48ABE2E71AEE3007295F0 /* GodotiCloudKVS */ = {
+		5EF48ABE2E71AEE3007295F0 /* GodotICloudKVS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				5EF48AC32E71AEE3007295F0 /* Exceptions for "GodotiCloudKVS" folder in "Copy Files" phase from "iOSPluginTemplate" target */,
+				5EF48AC32E71AEE3007295F0 /* Exceptions for "GodotICloudKVS" folder in "Copy Files" phase from "iOSPluginTemplate" target */,
 			);
-			path = GodotiCloudKVS;
+			path = GodotICloudKVS;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -57,7 +57,7 @@
 		5EF48AB32E71AEE3007295F0 = {
 			isa = PBXGroup;
 			children = (
-				5EF48ABE2E71AEE3007295F0 /* GodotiCloudKVS */,
+				5EF48ABE2E71AEE3007295F0 /* GodotICloudKVS */,
 				5EF48ABD2E71AEE3007295F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +65,7 @@
 		5EF48ABD2E71AEE3007295F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5EF48ABC2E71AEE3007295F0 /* libGodotiCloudKVS.a */,
+				5EF48ABC2E71AEE3007295F0 /* libGodotICloudKVS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5EF48ABB2E71AEE3007295F0 /* GodotiCloudKVS */ = {
+		5EF48ABB2E71AEE3007295F0 /* GodotICloudKVS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5EF48AC62E71AEE3007295F0 /* Build configuration list for PBXNativeTarget "GodotiCloudKVS" */;
+			buildConfigurationList = 5EF48AC62E71AEE3007295F0 /* Build configuration list for PBXNativeTarget "GodotICloudKVS" */;
 			buildPhases = (
 				5EF48AB82E71AEE3007295F0 /* Sources */,
 				5EF48AB92E71AEE3007295F0 /* Frameworks */,
@@ -86,13 +86,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5EF48ABE2E71AEE3007295F0 /* GodotiCloudKVS */,
+				5EF48ABE2E71AEE3007295F0 /* GodotICloudKVS */,
 			);
-			name = GodotiCloudKVS;
+			name = GodotICloudKVS;
 			packageProductDependencies = (
 			);
-			productName = GodotiCloudKVS;
-			productReference = 5EF48ABC2E71AEE3007295F0 /* libGodotiCloudKVS.a */;
+			productName = GodotICloudKVS;
+			productReference = 5EF48ABC2E71AEE3007295F0 /* libGodotICloudKVS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +109,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5EF48AB72E71AEE3007295F0 /* Build configuration list for PBXProject "GodotiCloudKVS" */;
+			buildConfigurationList = 5EF48AB72E71AEE3007295F0 /* Build configuration list for PBXProject "GodotICloudKVS" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -123,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5EF48ABB2E71AEE3007295F0 /* GodotiCloudKVS */,
+				5EF48ABB2E71AEE3007295F0 /* GodotICloudKVS */,
 			);
 		};
 /* End PBXProject section */
@@ -337,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5EF48AB72E71AEE3007295F0 /* Build configuration list for PBXProject "GodotiCloudKVS" */ = {
+		5EF48AB72E71AEE3007295F0 /* Build configuration list for PBXProject "GodotICloudKVS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5EF48AC42E71AEE3007295F0 /* Debug */,
@@ -346,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EF48AC62E71AEE3007295F0 /* Build configuration list for PBXNativeTarget "GodotiCloudKVS" */ = {
+		5EF48AC62E71AEE3007295F0 /* Build configuration list for PBXNativeTarget "GodotICloudKVS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5EF48AC72E71AEE3007295F0 /* Debug */,

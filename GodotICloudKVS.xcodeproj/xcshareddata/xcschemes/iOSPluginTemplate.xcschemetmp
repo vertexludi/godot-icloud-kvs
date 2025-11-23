@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5EF48ABB2E71AEE3007295F0"
-               BuildableName = "libGodotiCloudKVS.a"
-               BlueprintName = "GodotiCloudKVS"
-               ReferencedContainer = "container:GodotiCloudKVS.xcodeproj">
+               BuildableName = "libGodotICloudKVS.a"
+               BlueprintName = "GodotICloudKVS"
+               ReferencedContainer = "container:GodotICloudKVS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -51,9 +51,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5EF48ABB2E71AEE3007295F0"
-            BuildableName = "libGodotiCloudKVS.a"
-            BlueprintName = "GodotiCloudKVS"
-            ReferencedContainer = "container:GodotiCloudKVS.xcodeproj">
+            BuildableName = "libGodotICloudKVS.a"
+            BlueprintName = "GodotICloudKVS"
+            ReferencedContainer = "container:GodotICloudKVS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -1,6 +1,6 @@
 [config]
-name="GodotiCloudKVS"
-binary="GodotiCloudKVS.xcframework"
+name="GodotICloudKVS"
+binary="GodotICloudKVS.xcframework"
 
 initialization="register_godot_icloud_kvs_types"
 deinitialization="unregister_godot_icloud_kvs_types"

@@ -14,15 +14,19 @@ echo "Changing plugin to $NAME ($SAFE_NAME)"
 mv iOSPluginTemplate "$NAME"
 mv iOSPluginTemplate.xcodeproj "$NAME.xcodeproj"
 
-for FILE in $(find "$NAME" -type f); do
-	sed -i tmp "s/iOSPluginTemplate/$NAME/" "$FILE"
-	sed -i tmp "s/ios_plugin_template/$SAFE_NAME/" "$FILE"
+for FILE in $(find "$NAME" -type f -not -path '*xcuserdata*'); do
+	echo $FILE
+	sed -i ".tmp" "s/iOSPluginTemplate/$NAME/g" "$FILE"
+	sed -i ".tmp" "s/ios_plugin_template/$SAFE_NAME/g" "$FILE"
 	mv "$FILE" $(echo "$FILE" | sed s/iOSPluginTemplate/$NAME/)
+	rm -f "$FILE.tmp"
 done
 
-for FILE in $(find "$NAME.xcodeproj" -type f); do
-	sed -i tmp "s/iOSPluginTemplate/$NAME/" "$FILE"
-	sed -i tmp "s/ios_plugin_template/$SAFE_NAME/" "$FILE"
+for FILE in $(find "$NAME.xcodeproj" -type f -not -path '*xcuserdata*'); do
+	echo $FILE
+	sed -i ".tmp" "s/iOSPluginTemplate/$NAME/g" "$FILE"
+	sed -i ".tmp" "s/ios_plugin_template/$SAFE_NAME/g" "$FILE"
 	mv "$FILE" $(echo "$FILE" | sed s/iOSPluginTemplate/$NAME/)
+	rm -f "$FILE.tmp"
 done
 
