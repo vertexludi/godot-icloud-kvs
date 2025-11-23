@@ -2,7 +2,7 @@ class_name ICloudKVS
 extends RefCounted
 
 
-const _PLUGIN_CLASS := &"GodotiCloudKVS"
+const _PLUGIN_CLASS := &"GodotICloudKVS"
 
 
 static func set_string(key: String, value: String) -> void:
